@@ -45,8 +45,9 @@
                    x:Name="txtnocontrol"
                    Keyboard="Numeric"/>
 
-            <Button Text="Consultar Alumno"
+            <Button Text="Consultar Datos del Alumno"
                     x:Name="btnconsultaralumno"
+                    Clicked="ConsultarD"
                     TextColor="White"
                     BackgroundColor="SlateGray"/>
 
@@ -99,8 +100,9 @@
                    x:Name="txtnss"
                    Keyboard="Numeric"/>
 
-            <Button Text="Nuevo Alumno"
-                    x:Name="btnnuevaconsulta"
+            <Button Text="Nueva Consulta"
+                    x:Name="btnconsultanueva"
+                    Clicked="NuevaConsulta"
                     TextColor="White"
                     BackgroundColor="SlateGray"/>
 

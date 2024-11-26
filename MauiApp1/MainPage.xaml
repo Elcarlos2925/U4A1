@@ -6,7 +6,8 @@
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
-            Spacing="25">
+            Spacing="25"
+            Background="White">
 
             <Label Text="Instituto Tecnologico de Tijuana"
                    TextColor="Black"
@@ -43,7 +44,8 @@
 
             <Entry Placeholder="Clic Aqui"
                    x:Name="txtnocontrol"
-                   Keyboard="Numeric"/>
+                   Keyboard="Numeric"
+                   TextColor="Black"/>
 
             <Button Text="Consultar Datos del Alumno"
                     x:Name="btnconsultaralumno"
@@ -58,7 +60,8 @@
 
             <Entry Placeholder="Clic Aqui"
                    x:Name="txtnombres"
-                   Keyboard="Text"/>
+                   Keyboard="Text"
+                   TextColor="Black"/>
 
             <Label Text="Apellido(s):"
                    TextColor="Black"
@@ -66,7 +69,8 @@
 
             <Entry Placeholder="Clic Aqui"
                    x:Name="txtapellidos"
-                   Keyboard="Text"/>
+                   Keyboard="Text"
+                   TextColor="Black"/>
 
             <Label Text="Telefono (Celular):"
                    TextColor="Black"
@@ -74,7 +78,8 @@
 
             <Entry Placeholder="Clic Aqui"
                    x:Name="txttel"
-                   Keyboard="Numeric"/>
+                   Keyboard="Numeric"
+                   TextColor="Black"/>
 
             <Label Text="Dirección:"
                    TextColor="Black"
@@ -82,7 +87,8 @@
 
             <Entry Placeholder="Clic Aqui"
                    x:Name="txtdireccion"
-                   Keyboard="Text"/>
+                   Keyboard="Text"
+                   TextColor="Black"/>
 
             <Label Text="CURP:"
                    TextColor="Black"
@@ -90,7 +96,8 @@
 
             <Entry Placeholder="Clic Aqui"
                    x:Name="txtcurp"
-                   Keyboard="Text"/>
+                   Keyboard="Text"
+                   TextColor="Black"/>
 
             <Label Text="NSS:"
                    TextColor="Black"
@@ -98,7 +105,8 @@
 
             <Entry Placeholder="Clic Aqui"
                    x:Name="txtnss"
-                   Keyboard="Numeric"/>
+                   Keyboard="Numeric"
+                   TextColor="Black"/>
 
             <Button Text="Nueva Consulta"
                     x:Name="btnconsultanueva"

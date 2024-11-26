@@ -14,6 +14,7 @@ namespace MauiApp1
         }
         public async void ConsultarD(object sender ,EventArgs e)
         {
+            //Desarrollo de Aplicaciones Moviles
             //Carlos Abraham Lozoya Avalos 21211548
             try
             {

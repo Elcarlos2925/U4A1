@@ -16,13 +16,13 @@ public partial class Consultar : ContentPage
         //Carlos Abraham Lozoya Avalos 21211548
         try
         {
-            //Cadena conexi髇
-            string conexion = "Data Source=ALEXISLAP;Initial Catalog=Colegio;Persist Security Info=True;User ID=AlexisMG;PASSWORD=12345;Trust Server Certificate=True";
+            //Cadena conexi贸n
+            string conexion = "Data Source=DESKTOP-PIJ3T7N\\SQLEXPRESS;Initial Catalog=Colegio;Persist Security Info=True;User ID=CALA;PASSWORD=1122334455;Trust Server Certificate=True";
 
             using (SqlConnection conn = new(conexion))
             {
                 await conn.OpenAsync();
-                await DisplayAlert("Conexi髇 a BD", "Conexi髇 a BD establecida", "OK");
+                await DisplayAlert("Conexi贸n a BD", "Conexi贸n a BD establecida", "OK");
 
                 //Consulta SQL
                 string sentencia = "SELECT * FROM Alumno WHERE NoControl=" + txtnocontrol.Text;
@@ -44,15 +44,15 @@ public partial class Consultar : ContentPage
                     }
                     else
                     {
-                        await DisplayAlert("Conexi髇 a BD", "Ningun Registro Insertado", "OK");
+                        await DisplayAlert("Conexi贸n a BD", "Ningun Registro Insertado", "OK");
                     }
                 }
-                await DisplayAlert("Conexi髇 a BD", "Consulta elaborada con exito", "OK");
+                await DisplayAlert("Conexi贸n a BD", "Consulta elaborada con exito", "OK");
             }
         }
         catch
         {
-            await DisplayAlert("Conexi髇 a BD", "Conexi髇 a la BD No Establecida", "OK");
+            await DisplayAlert("Conexi贸n a BD", "Conexi贸n a la BD No Establecida", "OK");
         }
     }
 

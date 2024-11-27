@@ -32,88 +32,41 @@
                    FontAttributes="Italic"
                    TextDecorations="Underline"/>
 
-            <Label Text="Consulta de Datos"
+            <Label Text="Carrera: Ing. Tecnologías De La  Información Y De Las Comunicaciones"
                    TextColor="Black"
                    FontSize="15"
                    FontAttributes="Bold"
                    HorizontalOptions="Center"/>
 
-            <Label Text="No De Control:"
-                   TextColor="Black"
-                   FontSize="15"/>
+            <Image Source="img.png"
+                   HeightRequest="300"
+                   WidthRequest="300"
+                   HorizontalOptions="Center"
+                   Aspect="Fill"/>
 
-            <Entry Placeholder="Clic Aqui"
-                   x:Name="txtnocontrol"
-                   Keyboard="Numeric"
-                   TextColor="Black"/>
-
-            <Button Text="Consultar Datos del Alumno"
-                    x:Name="btnconsultaralumno"
-                    Clicked="ConsultarD"
+            <Button Text="Consulta de Datos del Alumno"
+                    x:Name="btnirconsulta"
+                    Clicked="IraConsulta"
                     TextColor="White"
                     BackgroundColor="SlateGray"/>
 
+            <Image Source="img1.png"
+                   HeightRequest="300"
+                   WidthRequest="300"
+                   HorizontalOptions="Center"
+                   Aspect="Fill"/>
 
-            <Label Text="Nombre(s):"
-                   TextColor="Black"
-                   FontSize="15"/>
-
-            <Entry Placeholder="Clic Aqui"
-                   x:Name="txtnombres"
-                   Keyboard="Text"
-                   TextColor="Black"/>
-
-            <Label Text="Apellido(s):"
-                   TextColor="Black"
-                   FontSize="15"/>
-
-            <Entry Placeholder="Clic Aqui"
-                   x:Name="txtapellidos"
-                   Keyboard="Text"
-                   TextColor="Black"/>
-
-            <Label Text="Telefono (Celular):"
-                   TextColor="Black"
-                   FontSize="15"/>
-
-            <Entry Placeholder="Clic Aqui"
-                   x:Name="txttel"
-                   Keyboard="Numeric"
-                   TextColor="Black"/>
-
-            <Label Text="Dirección:"
-                   TextColor="Black"
-                   FontSize="15"/>
-
-            <Entry Placeholder="Clic Aqui"
-                   x:Name="txtdireccion"
-                   Keyboard="Text"
-                   TextColor="Black"/>
-
-            <Label Text="CURP:"
-                   TextColor="Black"
-                   FontSize="15"/>
-
-            <Entry Placeholder="Clic Aqui"
-                   x:Name="txtcurp"
-                   Keyboard="Text"
-                   TextColor="Black"/>
-
-            <Label Text="NSS:"
-                   TextColor="Black"
-                   FontSize="15"/>
-
-            <Entry Placeholder="Clic Aqui"
-                   x:Name="txtnss"
-                   Keyboard="Numeric"
-                   TextColor="Black"/>
-
-            <Button Text="Nueva Consulta"
-                    x:Name="btnconsultanueva"
-                    Clicked="NuevaConsulta"
+            <Button Text="Inserción de Datos del Alumno"
+                    x:Name="btnirinsercion"
+                    Clicked="IraInsercion"
                     TextColor="White"
                     BackgroundColor="SlateGray"/>
 
+            <Image Source="img2.png"
+                   HeightRequest="300"
+                   WidthRequest="300"
+                   HorizontalOptions="Center"
+                   Aspect="Fill"/>
         </VerticalStackLayout>
     </ScrollView>
 

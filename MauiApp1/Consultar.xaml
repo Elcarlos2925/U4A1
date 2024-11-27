@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Consultar"
+             Title="Consultar">
+    
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25"
+        Background="White">
+
+            <Label Text="Instituto Tecnologico de Tijuana"
+               TextColor="Black"
+               FontAttributes="Bold"
+               FontSize="15"
+               HorizontalOptions="Center"/>
+
+            <Label Text="Desarrollo de Aplicaciones Moviles"
+               TextColor="Black"
+               FontSize="15"
+               FontAttributes="None"
+               HorizontalOptions="Center"/>
+
+            <Label Text="Horario: Lunes - Viernes 16-17"
+               TextColor="Black"
+               FontAttributes="Italic"
+               FontSize="15"/>
+
+            <Label Text="Alumno: Carlos Abraham Lozoya Avalos"
+               TextColor="Black"
+               FontSize="15"
+               FontAttributes="Italic"
+               TextDecorations="Underline"/>
+
+            <Label Text="Consulta de Datos"
+               TextColor="Black"
+               FontSize="15"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+
+            <Label Text="No De Control:"
+               TextColor="Black"
+               FontSize="15"/>
+
+            <Entry Placeholder="Clic Aqui"
+               x:Name="txtnocontrol"
+               Keyboard="Numeric"
+               TextColor="Black"/>
+
+            <Button Text="Consultar Datos del Alumno"
+                x:Name="btnconsultaralumno"
+                Clicked="ConsultarD"
+                TextColor="White"
+                BackgroundColor="SlateGray"/>
+
+
+            <Label Text="Nombre(s):"
+               TextColor="Black"
+               FontSize="15"/>
+
+            <Entry Placeholder="Clic Aqui"
+               x:Name="txtnombres"
+               Keyboard="Text"
+               TextColor="Black"/>
+
+            <Label Text="Apellido(s):"
+               TextColor="Black"
+               FontSize="15"/>
+
+            <Entry Placeholder="Clic Aqui"
+               x:Name="txtapellidos"
+               Keyboard="Text"
+               TextColor="Black"/>
+
+            <Label Text="Telefono (Celular):"
+               TextColor="Black"
+               FontSize="15"/>
+
+            <Entry Placeholder="Clic Aqui"
+               x:Name="txttel"
+               Keyboard="Numeric"
+               TextColor="Black"/>
+
+            <Label Text="Dirección:"
+               TextColor="Black"
+               FontSize="15"/>
+
+            <Entry Placeholder="Clic Aqui"
+               x:Name="txtdireccion"
+               Keyboard="Text"
+               TextColor="Black"/>
+
+            <Label Text="CURP:"
+               TextColor="Black"
+               FontSize="15"/>
+
+            <Entry Placeholder="Clic Aqui"
+               x:Name="txtcurp"
+               Keyboard="Text"
+               TextColor="Black"/>
+
+            <Label Text="NSS:"
+               TextColor="Black"
+               FontSize="15"/>
+
+            <Entry Placeholder="Clic Aqui"
+               x:Name="txtnss"
+               Keyboard="Numeric"
+               TextColor="Black"/>
+
+            <Button Text="Nueva Consulta"
+                x:Name="btnconsultanueva"
+                Clicked="NuevaConsulta"
+                TextColor="White"
+                BackgroundColor="SlateGray"/>
+
+            <Button Text="Regresar a Principal"
+                    x:Name="btnregresar"
+                    Clicked="Regresar"
+                    TextColor="White"
+                    BackgroundColor="Black"/>   
+
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

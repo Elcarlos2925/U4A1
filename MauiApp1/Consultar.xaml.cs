@@ -16,18 +16,15 @@ public partial class Consultar : ContentPage
         //Carlos Abraham Lozoya Avalos 21211548
         try
         {
-            //Cadena conexión
-            string conexion = "Data Source=DESKTOP-PIJ3T7N\\SQLEXPRESS;Initial Catalog=Colegio;Persist Security Info=True;User ID=CALA;PASSWORD=1122334455;Trust Server Certificate=True";
+            string conexion = "Data Source=ALEXISLAP;Initial Catalog=Colegio;Persist Security Info=True;User ID=AlexisMG;PASSWORD=12345;Trust Server Certificate=True";
 
             using (SqlConnection conn = new(conexion))
             {
                 await conn.OpenAsync();
-                await DisplayAlert("Conexión a BD", "Conexión a BD establecida", "OK");
+                await DisplayAlert("Conexión a la BD", "Conexión a la BD establecida", "Ok");
 
-                //Consulta SQL
-                string sentencia = "SELECT * FROM Alumno WHERE NoControl=" + txtnocontrol.Text;
+                string sentencia = "SELECT * FROM Alumnos WHERE NoControl=" + txtnocontrol.Text;
 
-                //Mandamos los datos de la BD hacia la forma
                 using (SqlCommand command = new SqlCommand(sentencia, conn))
                 {
                     SqlDataReader reader;
@@ -44,15 +41,16 @@ public partial class Consultar : ContentPage
                     }
                     else
                     {
-                        await DisplayAlert("Conexión a BD", "Ningun Registro Insertado", "OK");
+                        await DisplayAlert("Conexión a BD", "No hay ningún registro", "Ok");
                     }
+
                 }
-                await DisplayAlert("Conexión a BD", "Consulta elaborada con exito", "OK");
+                await DisplayAlert("Conexión a BD", "Consulta exitosa", "Ok");
             }
         }
-        catch
+        catch (Exception)
         {
-            await DisplayAlert("Conexión a BD", "Conexión a la BD No Establecida", "OK");
+            await DisplayAlert("Conexion a BD", "Conexión No Establecida", "Ok");
         }
     }
 

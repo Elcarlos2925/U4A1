@@ -12,12 +12,12 @@ public partial class Ingresar : ContentPage
     {
         try
         {
-            string conexion = "Data Source=ALEXISLAP;Initial Catalog=Colegio;Persist Security Info=True;User ID=AlexisMG;PASSWORD=12345;Trust Server Certificate=True";
+            string conexion = "Data Source=DESKTOP-PIJ3T7N\\SQLEXPRESS;Initial Catalog=Colegio;Persist Security Info=True;User ID=CALA;PASSWORD=1122334455;Trust Server Certificate=True";
 
             using (SqlConnection conn = new(conexion))
             {
                 await conn.OpenAsync();
-                await DisplayAlert("Conexión a BD", "Conexión a la BD Establecida", "OK");
+                await DisplayAlert("ConexiÃ³n a BD", "ConexiÃ³n a la BD Establecida", "OK");
 
                 string sentencia = "INSERT INTO Alumno (NoControl, Nombre, Apellidos, Telefono, Direccion, CURP, NSS)" +
                     "VALUES (@NoControl, @Nombre, @Apellidos, @Telefono, @Direccion, @CURP, @NSS)";
@@ -36,7 +36,7 @@ public partial class Ingresar : ContentPage
 
                     if (rowsAffected > 0)
                     {
-                        await DisplayAlert("Conexión a BD", "Datos Insertados Con Exito", "OK");
+                        await DisplayAlert("ConexiÃ³n a BD", "Datos Insertados Con Exito", "OK");
                     }
                     else
                     {

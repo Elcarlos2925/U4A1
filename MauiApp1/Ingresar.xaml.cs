@@ -10,7 +10,9 @@ public partial class Ingresar : ContentPage
 	}
     public async void IngresarAlumno(object sender, EventArgs e)
     {
-               try
+        //Desarrollo de Aplicaciones Moviles
+        //Carlos Abraham Lozoya Avalos 21211548
+        try
         {
             string conexion = "Data Source=ALEXISLAP;Initial Catalog=Colegio;Persist Security Info=True;User ID=AlexisMG;PASSWORD=12345;Trust Server Certificate=True";
 
@@ -19,19 +21,18 @@ public partial class Ingresar : ContentPage
                 await conn.OpenAsync();
                 await DisplayAlert("Conexión a la BD", "Conexión a la BD establecida", "Ok");
 
-                string sentencia = "INSERT INTO Alumnos (NoControl, Nombre, Apellidos, Telefono, Direccion, CURP, NSS)" +
-                                     "VALUES (@NoControl, @Nombre, @Apellidos, @Telefono, @Direccion, @CURP, @NSS)";
+                string sentencia = "INSERT INTO Alumnos (NoEmpleado, Nombre, Apellidos, Celular, Direccion, Departamento)" +
+                                     "VALUES (@NoEmpleado, @Nombre, @Apellidos, @Telefono, @Direccion, @Departamento)";
 
                 using (SqlCommand command = new SqlCommand(sentencia, conn))
                 {
 
-                    command.Parameters.AddWithValue("@NoControl", txtnocontrol.Text);
+                    command.Parameters.AddWithValue("@NoEmpleado", txtnoempleado.Text);
                     command.Parameters.AddWithValue("@Nombre", txtnombres.Text);
                     command.Parameters.AddWithValue("@Apellidos", txtapellidos.Text);
                     command.Parameters.AddWithValue("@Telefono", txttel.Text);
                     command.Parameters.AddWithValue("@Direccion", txtdireccion.Text);
-                    command.Parameters.AddWithValue("@CURP", txtcurp.Text);
-                    command.Parameters.AddWithValue("@NSS", txtnss.Text);
+                    command.Parameters.AddWithValue("@Departamento", txtdepartamento.Text);
 
 
                     //Ejecutar la consulta
@@ -58,13 +59,12 @@ public partial class Ingresar : ContentPage
 
     private void Nuevoalumno(object sender, EventArgs e)
     {
-        txtnocontrol.Text = "";
+        txtnoempleado.Text = "";
         txtnombres.Text = "";
         txtapellidos.Text = "";
         txttel.Text = "";
         txtdireccion.Text = "";
-        txtcurp.Text = "";
-        txtnss.Text = "";
+        txtdepartamento.Text = "";
     }
 
     private void Regresar(object sender, EventArgs e) 

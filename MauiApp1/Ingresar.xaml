@@ -39,25 +39,23 @@
                    HorizontalOptions="Center"
                    Aspect="Fill"/>
 
-            <Label Text="Alta de Alumnos"
+            <Label Text="Alta de Empleados"
                    TextColor="Black"
                    FontSize="15"
                    FontAttributes="Bold"
                    HorizontalOptions="Center"/>
 
-            <Label Text="No De Control:"
+            <Label Text="No De Empleado:"
                    TextColor="Black"
                    FontSize="15"/>
-
             <Entry Placeholder="Clic Aqui"
-                   x:Name="txtnocontrol"
+                   x:Name="txtnoempleado"
                    Keyboard="Numeric"
                    TextColor="Black"/>
 
             <Label Text="Nombre(s):"
                    TextColor="Black"
                    FontSize="15"/>
-
             <Entry Placeholder="Clic Aqui"
                    x:Name="txtnombres"
                    Keyboard="Text"
@@ -66,7 +64,6 @@
             <Label Text="Apellido(s):"
                    TextColor="Black"
                    FontSize="15"/>
-
             <Entry Placeholder="Clic Aqui"
                    x:Name="txtapellidos"
                    Keyboard="Text"
@@ -74,9 +71,7 @@
 
             <Label Text="Telefono (Celular):"
                    TextColor="Black"
-                   FontSize="15"
-                   TextColor="Black"/>
-
+                   FontSize="15"/>
             <Entry Placeholder="Clic Aqui"
                    x:Name="txttel"
                    Keyboard="Numeric"
@@ -85,28 +80,17 @@
             <Label Text="Dirección:"
                    TextColor="Black"
                    FontSize="15"/>
-
             <Entry Placeholder="Clic Aqui"
                    x:Name="txtdireccion"
                    Keyboard="Text"
                    TextColor="Black"/>
 
-            <Label Text="CURP:"
+            <Label Text="Departamento:"
                    TextColor="Black"
                    FontSize="15"/>
-
             <Entry Placeholder="Clic Aqui"
-                   x:Name="txtcurp"
+                   x:Name="txtdepartamento"
                    Keyboard="Text"
-                   TextColor="Black"/>
-
-            <Label Text="NSS:"
-                   TextColor="Black"
-                   FontSize="15"/>
-
-            <Entry Placeholder="Clic Aqui"
-                   x:Name="txtnss"
-                   Keyboard="Numeric"
                    TextColor="Black"/>
 
             <Button Text="Ingresar"

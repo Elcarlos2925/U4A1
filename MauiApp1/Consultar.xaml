@@ -39,17 +39,17 @@
                FontAttributes="Bold"
                HorizontalOptions="Center"/>
 
-            <Label Text="No De Control:"
+            <Label Text="No De Empleado:"
                TextColor="Black"
                FontSize="15"/>
 
             <Entry Placeholder="Clic Aqui"
-               x:Name="txtnocontrol"
+               x:Name="txtnoempleado"
                Keyboard="Numeric"
                TextColor="Black"/>
 
-            <Button Text="Consultar Datos del Alumno"
-                x:Name="btnconsultaralumno"
+            <Button Text="Consultar Datos del Empleado"
+                x:Name="btnconsultarempleado"
                 Clicked="ConsultarD"
                 TextColor="White"
                 BackgroundColor="SlateGray"/>
@@ -58,7 +58,6 @@
             <Label Text="Nombre(s):"
                TextColor="Black"
                FontSize="15"/>
-
             <Entry Placeholder="Clic Aqui"
                x:Name="txtnombres"
                Keyboard="Text"
@@ -67,7 +66,6 @@
             <Label Text="Apellido(s):"
                TextColor="Black"
                FontSize="15"/>
-
             <Entry Placeholder="Clic Aqui"
                x:Name="txtapellidos"
                Keyboard="Text"
@@ -76,7 +74,6 @@
             <Label Text="Telefono (Celular):"
                TextColor="Black"
                FontSize="15"/>
-
             <Entry Placeholder="Clic Aqui"
                x:Name="txttel"
                Keyboard="Numeric"
@@ -85,28 +82,18 @@
             <Label Text="Dirección:"
                TextColor="Black"
                FontSize="15"/>
-
             <Entry Placeholder="Clic Aqui"
                x:Name="txtdireccion"
                Keyboard="Text"
                TextColor="Black"/>
 
-            <Label Text="CURP:"
+            <Label Text="Departamento:"
                TextColor="Black"
                FontSize="15"/>
 
             <Entry Placeholder="Clic Aqui"
-               x:Name="txtcurp"
+               x:Name="txtdepartamento"
                Keyboard="Text"
-               TextColor="Black"/>
-
-            <Label Text="NSS:"
-               TextColor="Black"
-               FontSize="15"/>
-
-            <Entry Placeholder="Clic Aqui"
-               x:Name="txtnss"
-               Keyboard="Numeric"
                TextColor="Black"/>
 
             <Button Text="Nueva Consulta"

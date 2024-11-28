@@ -23,7 +23,7 @@ public partial class Consultar : ContentPage
                 await conn.OpenAsync();
                 await DisplayAlert("Conexión a la BD", "Conexión a la BD establecida", "Ok");
 
-                string sentencia = "SELECT * FROM Alumnos WHERE NoControl=" + txtnocontrol.Text;
+                string sentencia = "SELECT * FROM Empleado WHERE NoEmpleado=" + txtnoempleado.Text;
 
                 using (SqlCommand command = new SqlCommand(sentencia, conn))
                 {
@@ -36,8 +36,7 @@ public partial class Consultar : ContentPage
                         txtapellidos.Text = reader[2].ToString();
                         txttel.Text = reader[3].ToString();
                         txtdireccion.Text = reader[4].ToString();
-                        txtcurp.Text = reader[5].ToString();
-                        txtnss.Text = reader[6].ToString();
+                        txtdepartamento.Text = reader[5].ToString();
                     }
                     else
                     {
@@ -56,14 +55,13 @@ public partial class Consultar : ContentPage
 
     public async void NuevaConsulta(object sender, EventArgs e)
     {
-        txtnocontrol.Text = "";
+        txtnoempleado.Text = "";
         txtnombres.Text = "";
         txtapellidos.Text = "";
         txttel.Text = "";
         txtdireccion.Text = "";
-        txtcurp.Text = "";
-        txtnss.Text = "";
-        txtnocontrol.Focus();
+        txtdepartamento.Text = "";
+        txtnoempleado.Focus();
     }
     private void Regresar(object sender, EventArgs e)
     {
